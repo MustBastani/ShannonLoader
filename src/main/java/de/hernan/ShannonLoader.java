@@ -133,6 +133,16 @@ public class ShannonLoader extends BinaryLoader
               "\\x00\\x00\\x00\\x40 # matches next range phys start address",
               "\\x00\\x00\\x00\\x40 # matches next range virt start address"
               )
+            ),
+            new PatternEntry(String.join("\n",
+              "# pattern for G991B",
+              "\\x00\\x00\\x00\\x00 # matches the virt start address",
+              "\\x00\\x00\\x00\\x00 # matches the phys start address",
+              "\\x00\\x00\\x10\\x00 # matches the phys end address",
+              "\\x0c\\x94\\x01\\x00 # matches the flags",
+              "\\x00\\x00\\x00\\x40 # matches the next virt start address",
+              "\\x00\\x00\\x00\\x40 # matches the next phys start address"
+              )
             )
           )
         ),
